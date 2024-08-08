@@ -1,13 +1,12 @@
-public class Car {
+public class Car extends Transport {
 
-    public String modelName;
-    public int wheelsCount;
-
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    public static void check (Car car) {
+        System.out.println("Обслуживаем " + car.getModelName());
+        for (int i = 0; i < car.getWheelsCount(); i++) {
+            ServiceStation.updateTyre();
+        }
+        ServiceStation.checkEngine();
+        System.out.println(" ");
     }
 
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
 }
