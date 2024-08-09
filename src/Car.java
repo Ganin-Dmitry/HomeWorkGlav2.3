@@ -1,11 +1,12 @@
 public class Car extends Transport {
 
-    public static void check (Car car) {
-        System.out.println("Обслуживаем " + car.getModelName());
-        for (int i = 0; i < car.getWheelsCount(); i++) {
-            ServiceStation.updateTyre();
+    @Override
+    public void check () {
+        System.out.println("Обслуживаем " + this.getModelName());
+        for (int i = 0; i < this.getWheelsCount(); i++) {
+            this.updateTyre();
         }
-        ServiceStation.checkEngine();
+        this.checkEngine();
         System.out.println(" ");
     }
 

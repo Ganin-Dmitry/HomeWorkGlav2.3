@@ -22,12 +22,17 @@ public class Main {
         bicycle.setWheelsCount(2);
         bicycle2.setWheelsCount(2);
 
-        Car.check(car);
-        Car.check(car2);
-        Bicycle.check(bicycle);
-        Bicycle.check(bicycle2);
-        Truck.check(truck);
-        Truck.check(truck2);
+        Transport transport = new Transport();
+        transport.setModelName("Telega");
+        transport.setWheelsCount(3);
+
+        car.check();
+        car2.check();
+        bicycle.check();
+        bicycle2.check();
+        truck.check();
+        truck2.check();
+        transport.check();
 
     }
 }
