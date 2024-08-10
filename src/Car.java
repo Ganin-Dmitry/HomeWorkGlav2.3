@@ -10,4 +10,9 @@ public class Car extends Transport {
         System.out.println(" ");
     }
 
+    @Override
+    public void checkTrailer () {
+        System.out.println("У данного вида транспорта нет прицепа");
+    }
+
 }

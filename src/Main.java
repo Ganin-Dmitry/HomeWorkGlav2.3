@@ -33,6 +33,7 @@ public class Main {
         truck.check();
         truck2.check();
         transport.check();
+        bicycle.checkEngine();
 
     }
 }

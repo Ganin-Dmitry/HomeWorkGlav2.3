@@ -23,15 +23,15 @@ public class Transport {
         System.out.println("Проверяем работоспособность транспорта");
     }
 
-    public void updateTyre() {
+    protected void updateTyre() {
         System.out.println("Меняем покрышку");
     }
 
-    public void checkEngine() {
+    protected void checkEngine() {
         System.out.println("Проверяем двигатель");
     }
 
-    public void checkTrailer() {
+    protected void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }
 
