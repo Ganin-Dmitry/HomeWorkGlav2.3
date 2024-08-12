@@ -1,4 +1,4 @@
-public class Truck extends Transport {
+public class Truck extends Transport implements WheeledTransport, MotorTransport, TrailerTransport {
 
     @Override
     public void check () {

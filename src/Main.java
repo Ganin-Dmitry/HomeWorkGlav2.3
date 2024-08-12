@@ -22,18 +22,11 @@ public class Main {
         bicycle.setWheelsCount(2);
         bicycle2.setWheelsCount(2);
 
-        Transport transport = new Transport();
-        transport.setModelName("Telega");
-        transport.setWheelsCount(3);
-
         car.check();
         car2.check();
         bicycle.check();
         bicycle2.check();
         truck.check();
         truck2.check();
-        transport.check();
-        bicycle.checkEngine();
-
     }
 }

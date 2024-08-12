@@ -1,4 +1,4 @@
-public class Bicycle extends Transport {
+public class Bicycle extends Transport implements WheeledTransport {
 
     @Override
     public void check () {
@@ -9,13 +9,4 @@ public class Bicycle extends Transport {
         System.out.println(" ");
     }
 
-    @Override
-    public void checkEngine () {
-        System.out.println("У данного вида транспорта нет двигателя");
-    }
-
-    @Override
-    public void checkTrailer () {
-        System.out.println("У данного вида транспорта нет прицепа");
-    }
 }

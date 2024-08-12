@@ -1,4 +1,4 @@
-public class Car extends Transport {
+public class Car extends Transport implements MotorTransport, WheeledTransport{
 
     @Override
     public void check () {
@@ -8,11 +8,6 @@ public class Car extends Transport {
         }
         this.checkEngine();
         System.out.println(" ");
-    }
-
-    @Override
-    public void checkTrailer () {
-        System.out.println("У данного вида транспорта нет прицепа");
     }
 
 }

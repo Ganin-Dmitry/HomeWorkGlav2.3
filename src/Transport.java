@@ -23,16 +23,4 @@ public class Transport {
         System.out.println("Проверяем работоспособность транспорта");
     }
 
-    protected void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
-
-    protected void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
-
-    protected void checkTrailer() {
-        System.out.println("Проверяем прицеп");
-    }
-
 }
