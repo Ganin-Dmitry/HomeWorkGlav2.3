@@ -1,13 +1,13 @@
-public class Car {
+public class Car extends Transport implements MotorTransport, WheeledTransport{
 
-    public String modelName;
-    public int wheelsCount;
-
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    @Override
+    public void check () {
+        System.out.println("Обслуживаем " + this.getModelName());
+        for (int i = 0; i < this.getWheelsCount(); i++) {
+            this.updateTyre();
+        }
+        this.checkEngine();
+        System.out.println(" ");
     }
 
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
 }

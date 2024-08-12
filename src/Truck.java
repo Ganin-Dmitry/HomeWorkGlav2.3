@@ -1,17 +1,14 @@
-public class Truck {
+public class Truck extends Transport implements WheeledTransport, MotorTransport, TrailerTransport {
 
-    public String modelName;
-    public int wheelsCount;
-
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    @Override
+    public void check () {
+        System.out.println("Обслуживаем " + this.getModelName());
+        for (int i = 0; i < this.getWheelsCount(); i++) {
+            this.updateTyre();
+        }
+        this.checkEngine();
+        this.checkTrailer();
+        System.out.println(" ");
     }
 
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
-
-    public void checkTrailer() {
-        System.out.println("Проверяем прицеп");
-    }
 }
